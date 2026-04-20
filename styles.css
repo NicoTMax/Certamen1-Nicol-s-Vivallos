@@ -1,12 +1,11 @@
-.reset{
-
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-between;
+    font-family: Arial, sans-serif;
 }
 
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,13 +14,13 @@
     color: white;
 }
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.logo-box{
+.logo-box {
     background: orange;
     color: white;
     font-weight: bold;
@@ -66,7 +65,7 @@
     width: 200px;
     border-radius: 50%;
     background: #ccc;
-    padding: 40px;
+    padding: 20px;
 }
 
 #sobre-mi {
@@ -78,11 +77,6 @@
 
 article {
     width: 60%;
-}
-
-.subtitulo {
-    color: gray;
-    margin-bottom: 20px;
 }
 
 aside {
@@ -97,4 +91,85 @@ blockquote {
     padding-left: 10px;
     color: gray;
     margin-top: 20px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead {
+    background-color: #1e3a5f;
+    color: white;
+}
+
+th, td {
+    border: 2px solid #1e3a5f;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.barra {
+    width: 100px;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.progreso {
+    height: 100%;
+    border-radius: 5px;
+}
+
+.html {
+    width: 80%;
+    background: #e34c26;
+}
+
+.css {
+    width: 60%;
+    background: #264de4;
+}
+
+.javascript {
+    width: 40%;
+    background: #f0db4f;
+}
+
+.github {
+    width: 20%;
+    background: #333;
+}
+
+.react {
+    width: 10%;
+    background: #61dafb;
+}
+
+
+.proceso-html {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+
+}
+.proceso-html ol {
+    padding-left: 20px; 
+    margin: 0;
+
+}
+
+
+.proceso-html div {
+    background-color: #f5f5f5;  
+    padding: 20px;               
+    border-radius: 15px;        
+    width: 100%;                 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+    text-align: center;
 }
