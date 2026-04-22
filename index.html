@@ -8,228 +8,265 @@
 </head>
 <body>
 
-    <!-- HEADER -->
-    <header class="header">
-        <div class="logo">
-            <span class="logo-box"></span>
-            <span class="nombre">Nicolás Vivallos</span>
+<header class="header">
+    <div class="logo">
+        <span class="logo-box"></span>
+        <span class="nombre">Nicolás Vivallos</span>
+    </div>
+    <nav class="nav">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+        <a href="https://github.com/NicoTMax" target="_blank">GitHub</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>Hola, soy <span>Nicolás Vivallos</span></h1>
+        <h3>Aspirante a desarrollo web</h3>
+        <p>
+            Apasionado por crear webs modernas y accesibles.
+            Actualmente cursando Ingeniería en Informática.
+        </p>
+    </div>
+
+    <div class="hero-img">
+        <img src="images.jpg" alt="perfil">
+    </div>
+</section>
+
+<section id="sobre-mi">
+    <article>
+        <h1>Sobre Mí</h1>
+        <p>
+            Soy estudiante de desarrollo web apasionado por crear sitios modernos,
+            funcionales y atractivos visualmente.
+        </p>
+
+        <p>
+            Actualmente aprendiendo HTML, CSS y JavaScript para convertirme en
+            desarrollador front-end.
+        </p>
+
+        <blockquote>
+            "El único modo de hacer un gran trabajo es amar lo que haces."
+        </blockquote>
+    </article>
+
+    <aside>
+        <h3>Datos personales</h3>
+        <p><strong>Edad:</strong> 20 años</p>
+        <p><strong>Ciudad:</strong> Concepción, Chile</p>
+        <p><strong>Email:</strong> nico.tvivallos@gmail.com</p>
+        <p><strong>Carrera:</strong> Informática</p>
+    </aside>
+</section>
+
+<section id="habilidades">
+    <h2>Habilidades</h2>
+    <p>Tecnologías y competencias básicas en desarrollo web</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Tecnología</th>
+                <th>Nivel</th>
+                <th>Dominio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>HTML5</td>
+                <td>Avanzado</td>
+                <td><div class="barra"><div class="progreso html"></div></div></td>
+            </tr>
+            <tr>
+                <td>CSS3</td>
+                <td>Intermedio</td>
+                <td><div class="barra"><div class="progreso css"></div></div></td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>Intermedio</td>
+                <td><div class="barra"><div class="progreso javascript"></div></div></td>
+            </tr>
+            <tr>
+                <td>Git/GitHub</td>
+                <td>Intermedio</td>
+                <td><div class="barra"><div class="progreso github"></div></div></td>
+            </tr>
+            <tr>
+                <td>React</td>
+                <td>Básico</td>
+                <td><div class="barra"><div class="progreso react"></div></div></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="proceso-html">
+        <div>
+            <h3>Competencias</h3>
+            <ol>
+                <li>HTML semántico</li>
+                <li>Creación de páginas</li>
+                <li>CSS básico</li>
+                <li>Trabajo en equipo</li>
+            </ol>
         </div>
-        <nav class="nav">
-            <a href="#sobre-mi">Sobre mí</a>
-            <a href="#habilidades">Habilidades</a>
-            <a href="#proyectos">Proyectos</a>
-            <a href="#">Contacto</a>
-        </nav>
-    </header>
 
-    <!-- HERO -->
-    <section class="hero">
-        <div class="hero-text">
-            <h1>Hola, soy <span>Nicolás Vivallos</span></h1>
-            <h3>Aspirante a desarrollo web</h3>
-            <p>
-                Apasionado por crear webs modernas y accesibles.
-                Actualmente cursando la carrera de Ingeniería en Informática.
-            </p>
+        <div>
+            <h3>En aprendizaje</h3>
+            <ol>
+                <li>JavaScript</li>
+                <li>Git</li>
+                <li>Responsive</li>
+                <li>React</li>
+            </ol>
         </div>
+    </div>
+</section>
 
-        <div class="hero-img">
-            <img src="images.jpg" alt="perfil">
-        </div>
-    </section>
+<section id="proyectos">
+    <h2>Proyectos</h2>
+    <p class="subtitulo">Algunos de mis trabajos</p>
 
-    <!-- SOBRE MÍ -->
-    <section id="sobre-mi">
-        <article>
-            <h1>Sobre Mí</h1>
-            <p>
-                Mi nombre es Nicolás Vivallos y soy estudiante de desarrollo web.
-                Desde que descubrí la programación, me apasiona crear sitios web
-                funcionales y estéticamente agradables.
-            </p>
+    <div class="grid-proyectos">
 
-            <p>
-                Actualmente estoy aprendiendo HTML5, CSS3 y JavaScript,
-                con el objetivo de convertirme en un desarrollador front-end profesional.
-            </p>
+        <figure class="card">
+            <div class="color azul">💻</div>
+            <figcaption>
+                <small>Landing page</small>
+                <h3>Landing Page</h3>
+                <p>Diseño moderno de producto digital.</p>
+                <a href="#">Ver repositorio →</a>
+            </figcaption>
+        </figure>
 
-            <blockquote>
-                "El único modo de hacer un gran trabajo es amar lo que haces."
-            </blockquote>
-        </article>
+        <figure class="card">
+            <div class="color rosado">🎨</div>
+            <figcaption>
+                <small>Blog</small>
+                <h3>Blog Personal</h3>
+                <p>Blog responsive.</p>
+                <a href="#">Ver repositorio →</a>
+            </figcaption>
+        </figure>
 
-        <aside>
-            <h3>Datos personales</h3>
-            <p><strong>Edad:</strong> 20 años</p>
-            <p><strong>Ciudad:</strong> Concepción, Chile</p>
-            <p><strong>Email:</strong> nico.tvivallos@gmail.com</p>
-            <p><strong>Carrera:</strong> Informática</p>
-            <p><strong>Intereses:</strong> Programación, Gaming</p>
+        <figure class="card">
+            <div class="color celeste">🛠</div>
+            <figcaption>
+                <small>Dashboard</small>
+                <h3>Dashboard</h3>
+                <p>Panel de administración.</p>
+                <a href="#">Ver repositorio →</a>
+            </figcaption>
+        </figure>
+
+        <figure class="card">
+            <div class="color verde">📱</div>
+            <figcaption>
+                <small>App</small>
+                <h3>App Clima</h3>
+                <p>Consumo de API.</p>
+                <a href="#">Ver repositorio →</a>
+            </figcaption>
+        </figure>
+
+        <figure class="card">
+            <div class="color naranja">🚀</div>
+            <figcaption>
+                <small>E-commerce</small>
+                <h3>Tienda</h3>
+                <p>Tienda básica online.</p>
+                <a href="#">Ver repositorio →</a>
+            </figcaption>
+        </figure>
+
+        <figure class="card">
+            <div class="color morado">📚</div>
+            <figcaption>
+                <small>Portafolio</small>
+                <h3>Portafolio</h3>
+                <p>Mi portafolio web.</p>
+                <a href="#">Ver repositorio →</a>
+            </figcaption>
+        </figure>
+
+    </div>
+</section>
+
+<section id="contacto">
+    <h2>Contacto</h2>
+    <p class="subtitulo">Envíame un mensaje</p>
+
+    <div class="contenedor-contacto">
+
+        <form class="formulario">
+
+            <div class="fila">
+                <div class="input-group">
+                    <label>Nombre completo</label>
+                    <input type="text" placeholder="Tu nombre">
+                </div>
+
+                <div class="input-group">
+                    <label>Correo</label>
+                    <input type="email" placeholder="tu@email.com">
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label>Asunto</label>
+                <select>
+                    <option>Selecciona un asunto</option>
+                    <option>Trabajo</option>
+                    <option>Consulta</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label>Mensaje</label>
+                <textarea placeholder="Escribe tu mensaje..."></textarea>
+            </div>
+
+            <button type="submit">Enviar mensaje</button>
+        </form>
+
+        <aside class="info-contacto">
+
+            <h3>Información de contacto</h3>
+
+            <div class="item-contacto">
+                <div class="icono">✉️</div>
+                <p>nico.tvivallos@gmail.com</p>
+            </div>
+
+            <div class="item-contacto">
+                <div class="icono">📍</div>
+                <p>Concepción, Chile</p>
+            </div>
+
+            <div class="item-contacto">
+                 <div class="icono">📱</div>
+                <p>+56 9 8574 3675</p>
+            </div>
+
+            <div class="item-contacto">
+                <div class="icono">🌐</div>
+                <p><a href="https://github.com/NicoTMax" target="_blank">github.com/NicoTMax</a></p>
+            </div>
+
         </aside>
-    </section>
 
-    <!-- HABILIDADES -->
-    <section id="habilidades">
-        <h2>Habilidades</h2>
-        <p>Tecnologías y competencias básicas en desarrollo web</p>
+    </div>
+</section>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>Tecnología</th>
-                    <th>Nivel</th>
-                    <th>Dominio</th>
-                </tr>
-            </thead>
 
-            <tbody>
-                <tr>
-                    <td>HTML5</td>
-                    <td>Avanzado</td>
-                    <td>
-                        <div class="barra">
-                            <div class="progreso html"></div>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>CSS3</td>
-                    <td>Intermedio-alto</td>
-                    <td>
-                        <div class="barra">
-                            <div class="progreso css"></div>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>JavaScript</td>
-                    <td>Intermedio</td>
-                    <td>
-                        <div class="barra">
-                            <div class="progreso javascript"></div>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>Git/GitHub</td>
-                    <td>Intermedio</td>
-                    <td>
-                        <div class="barra">
-                            <div class="progreso github"></div>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>React</td>
-                    <td>Básico</td>
-                    <td>
-                        <div class="barra">
-                            <div class="progreso react"></div>
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-        <!-- COMPETENCIAS -->
-        <div class="proceso-html">
-
-            <div>
-                <h3>Competencias</h3>
-                <ol>
-                    <li>Uso de HTML semántico</li>
-                    <li>Creación de páginas web básicas</li>
-                    <li>Estilos con CSS</li>
-                    <li>Trabajo en equipo</li>
-                </ol>
-            </div>
-
-            <div>
-                <h3>En proceso de aprendizaje</h3>
-                <ol>
-                    <li>Mejorar CSS</li>
-                    <li>Aprender JavaScript</li>
-                    <li>Uso de Git</li>
-                    <li>Diseño web responsive</li>
-                </ol>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- PROYECTOS (CORREGIDO) -->
-    <section id="proyectos">
-        <h2>Proyectos</h2>
-        <p class="subtitulo">Algunos de mis trabajos</p>
-
-        <div class="grid-proyectos">
-
-            <figure class="card">
-                <div class="color azul">💻</div>
-                <figcaption>
-                    <small>Proyecto web - Landing page</small>
-                    <h3>Landing Page</h3>
-                    <p>Página de aterrizaje para producto digital con diseño moderno.</p>
-                    <a href="#">Ver repositorio →</a>
-                </figcaption>
-            </figure>
-
-            <figure class="card">
-                <div class="color rosado">🎨</div>
-                <figcaption>
-                    <small>Proyecto web - Blog personal</small>
-                    <h3>Blog Personal</h3>
-                    <p>Blog responsivo con sistema de artículos y categorías.</p>
-                    <a href="#">Ver repositorio →</a>
-                </figcaption>
-            </figure>
-
-            <figure class="card">
-                <div class="color celeste">🛠</div>
-                <figcaption>
-                    <small>Proyecto web - Dashboard</small>
-                    <h3>Dashboard Admin</h3>
-                    <p>Panel de administración con gráficos y tablas de datos.</p>
-                    <a href="#">Ver repositorio →</a>
-                </figcaption>
-            </figure>
-
-            <figure class="card">
-                <div class="color verde">📱</div>
-                <figcaption>
-                    <small>Proyecto web - App móvil</small>
-                    <h3>App Clima</h3>
-                    <p>Aplicación del clima con API externa y diseño responsivo.</p>
-                    <a href="#">Ver repositorio →</a>
-                </figcaption>
-            </figure>
-
-            <figure class="card">
-                <div class="color naranja">🚀</div>
-                <figcaption>
-                    <small>Proyecto web - E-commerce</small>
-                    <h3>Tienda Online</h3>
-                    <p>E-commerce básico con catálogo de productos y carrito.</p>
-                    <a href="#">Ver repositorio →</a>
-                </figcaption>
-            </figure>
-
-            <figure class="card">
-                <div class="color morado">📚</div>
-                <figcaption>
-                    <small>Proyecto web - Portafolio</small>
-                    <h3>Portafolio v1</h3>
-                    <p>Primera versión de mi portafolio profesional.</p>
-                    <a href="#">Ver repositorio →</a>
-                </figcaption>
-            </figure>
-
-        </div>
-    </section>
+<footer>
+    <p>Nicolás Vivallos - 2026</p>
+</footer>
 
 </body>
 </html>
