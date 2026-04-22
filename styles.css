@@ -5,7 +5,6 @@
     font-family: Arial, sans-serif;
 }
 
-
 body {
     background: #f8fafc;
     color: #1e293b;
@@ -19,6 +18,9 @@ body {
     background: #1e3a5f;
     padding: 20px 50px;
     color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .logo {
@@ -39,6 +41,23 @@ body {
     margin-left: 25px;
     text-decoration: none;
     font-weight: bold;
+    position: relative;
+}
+
+
+.nav a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: orange;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+.nav a:hover::after {
+    width: 100%;
 }
 
 
@@ -53,15 +72,6 @@ body {
 
 .hero-text {
     max-width: 500px;
-}
-
-.hero-text h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-
-.hero-text h3 {
-    margin-bottom: 15px;
 }
 
 .hero-img img {
@@ -103,11 +113,10 @@ blockquote {
 }
 
 #habilidades h2 {
-    font-size: 32px;
     margin-bottom: 10px;
 }
 
-#habilidades p {
+.subtitulo {
     color: gray;
     margin-bottom: 30px;
 }
@@ -142,6 +151,11 @@ th, td {
 .progreso {
     height: 100%;
     border-radius: 5px;
+    animation: cargar 2s ease;
+}
+
+@keyframes cargar {
+    from { width: 0; }
 }
 
 .html { width: 80%; background: #e34c26; }
@@ -163,25 +177,17 @@ th, td {
     border-radius: 15px;
     width: 100%;
     text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .proceso-html h3 {
     margin-bottom: 15px;
 }
 
-.proceso-html ol {
-    padding-left: 20px;
-}
-
 
 #proyectos {
     padding: 60px;
     text-align: center;
-}
-
-.subtitulo {
-    color: gray;
-    margin-bottom: 30px;
 }
 
 .grid-proyectos {
@@ -195,7 +201,11 @@ th, td {
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    text-align: left;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
 }
 
 .color {
@@ -218,15 +228,6 @@ figcaption {
     padding: 15px;
 }
 
-figcaption h3 {
-    margin: 10px 0;
-}
-
-figcaption a {
-    color: #2563eb;
-    text-decoration: none;
-}
-
 
 #contacto {
     padding: 60px;
@@ -238,7 +239,6 @@ figcaption a {
     gap: 40px;
     margin-top: 40px;
 }
-
 
 .formulario {
     flex: 2;
@@ -253,12 +253,6 @@ figcaption a {
     width: 100%;
     text-align: left;
     margin-bottom: 15px;
-}
-
-.input-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
 }
 
 .input-group input,
@@ -281,7 +275,6 @@ textarea {
     color: white;
     border: none;
     border-radius: 8px;
-    margin-top: 10px;
 }
 
 
